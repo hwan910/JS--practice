@@ -1,0 +1,24 @@
+<!-- split 문자열 잘라서 사용 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-2-8</title>
+  <script>
+    const input = prompt('태어난 해를 입력해주세요', '')
+    const year = Number(input)
+    const gan = '경,신,임,계,갑,을,병,정,무,기'.split(',')
+    const tti = '신,유,술,해,자,축,인,묘,진,사,오,미'.split(',')
+    
+    alert(`${year}년은 ${gan[year % 10]}${tti[year % 12]}년 입니다.`)
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
